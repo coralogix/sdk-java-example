@@ -30,6 +30,7 @@ export CORALOGIX_PRIVATE_KEY="YOUR_CORALOGIX_PRIVATE_KEY"
 java -jar target/coralogix-sdk-example-1.0-SNAPSHOT.jar
 ```
 
+
 ## Extend
 
 To use **Coralogix Java SDK** in your application you should add the appropriate dependency to your `pom.xml` file:
@@ -42,4 +43,19 @@ To use **Coralogix Java SDK** in your application you should add the appropriate
 </dependency>
 ```
 
-where `2.0.x` should be replaced with the latest version from the [Maven](https://mvnrepository.com/artifact/com.coralogix.sdk/coralogix-sdk) repository.
+where `2.0.x` should be replaced with the latest version from the [Maven](https://cgx.jfrog.io/ui/native/maven/com/coralogix/sdk) repository.
+
+
+## Build with Gradle
+
+To build the project you need to execute the following command:
+
+```bash
+# if you have gradle installed
+gradle build
+
+# if gradle is not installed, docker ca
+docker run --rm -u gradle -v "$PWD":/home/gradle/sdk-java-example -w /home/gradle/sdk-java-example gradle gradle build
+```
+
+After compilation you will have `build/libs/` folder which will contain the `.jar` file with the test application.
