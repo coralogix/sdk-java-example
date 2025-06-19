@@ -1,4 +1,5 @@
 # Coralogix Java SDK sample project
+## This code is depricated and will be removed in August 4, please use otel [java sdk instead](https://opentelemetry.io/docs/languages/java/)
 
 This is a sample project which demonstrates the example of usage of [Coralogix Java SDK](https://mvnrepository.com/artifact/com.coralogix.sdk/coralogix-sdk).
 
